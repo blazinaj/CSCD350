@@ -1,0 +1,39 @@
+Jacob Blazina,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,Category,,,,,Data,,Role,,,Pattern,,,Concern,,,Layer,,,Difficulty,,,Risk,,,Confidence,,,,Related Elements,,
+Element,,Noun,Adjective,Preposition,Verb,Other,Static,Dynamic,Input,Processing,Output,Creational,Structural,Behavioral,Model,View,Controller,CS,EE,ME,Easy,Moderate,Hard,Low,Moderate,High,Low,Moderate,High,,1,2,3
+1,acceleration,x,,,,,,x,,,x,,,x,,x,,,,x,,x,,,x,,,,x,,derivative,jerk,g-force
+2,actuator,x,,,,,,x,,x,,,x,,,,x,,,x,x,,,,,x,,x,,,solenoid,ram,switch
+3,aileron,x,,,,,,x,,,x,,,x,x,,,,,x,,x,,,x,,,,x,,hinge,fulcrum,symmetry
+4,airspeed,x,,,,,,x,,x,,,,x,,,x,x,,,,,x,x,,,,x,,,ground speed,wind speed,relative speed
+5,altitude,x,,,,,,x,x,,,,,x,x,,,,,x,x,,,,x,,,x,,,sea level,atmosphere,air pressure
+6,angle-of-attack indicator,x,,,,,x,,,x,,,x,,,x,,,x,,,x,,,x,,,x,,,bernoullis equation,air flow,LED
+7,autopilot,x,,,,,,x,,x,,,,x,,,x,x,,,,,x,x,,,,x,,,robot,Tesla,Artificial Intelligence
+8,autothrottle,x,,,,,,x,,x,,,,x,,,x,x,,,,,x,,x,,x,,,,cruise control,altitude control,air friction
+9,communication bus,x,,,,,x,,,x,,,x,,,,x,,x,,,,x,,,x,,,x,,relay,LRU,message
+10,communication bus protocol,x,,,,,x,,,x,,,x,,,,x,,x,,,x,,,,x,,x,,,transmission,reciever,codec
+11,elevator,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,,,x,,,x,,center of gravity,deflection,turbulence
+12,engine,x,,,,,,x,,,x,,,x,,,x,,,x,,x,,,,x,,x,,,thrust,turbine,combustion
+13,FADEC,x,,,,,,x,,x,,,x,,,,x,x,,,,,x,,,x,x,,,,control module,AWD,human input
+14,filght control law,x,,,,,x,,x,,,x,,,x,,,x,,,,,x,,x,,x,,,,flight mode,regulation,flight pattern
+15,flap,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,,,x,,,x,,lift,aerodynamic,wing control
+16,flight control system,x,,,,,,x,,,x,,,x,,x,,,,x,,x,,,,x,,x,,,network,systems theory,comprehensive control
+17,flight data recorder,x,,,,,x,,x,,,x,,,x,,,x,,,,,x,x,,,,x,,,microphone,camera,black box
+18,fly-by-wire control system,x,,,,,x,,,x,,,x,,,,x,,x,,,,x,,,x,x,,,,electric signal,servo,fuse
+19,horizontal stabilizer,x,,,,,x,,,,x,,,x,,x,,,,x,x,,,,x,,,,x,,tail,center of mass,metal
+20,latitude/longitude,x,,,,,x,,,,x,,,x,,x,,,,x,x,,,x,,,,,x,,map,compass,coordinate system
+21,MCAS,x,,,,,,x,,x,,,,x,,,x,x,,,,x,,,,x,,x,,,software,point of failure,redundancy
+22,pitch,x,,,,,,x,,,x,,,x,,x,,,,x,,x,,,,x,,,x,,take-off,landing,crashing
+23,pitot tube,x,,,,,x,,x,,,x,,,,x,,,,x,x,,,x,,,,x,,,sound barrier,net pressure,fluid dynamics
+24,roll,x,,,,,,x,,,x,,,x,,x,,,,x,,x,,,,x,,,x,,barrel roll,dip,lateral
+25,rudder,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,,,x,,,x,,direction,pivot,vertical stablilizer
+26,sensor,x,,,,,x,,x,,,x,,,x,,,,,x,x,,,,,x,,x,,,sensor failure,communication protocol,resistance
+27,slat,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,,,x,,,x,,wing-area,surface area,extension
+28,speed brake,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,x,,,x,,,,drag,air resitance,descent
+29,stall,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,x,,,,x,,,reduction,exceeded AoA,nose angle
+30,static port,x,,,,,x,,x,,,x,,,x,,,,,x,x,,,x,,,,x,,,static pressure,neutral positioning,relative pressure
+31,trim,x,,,,,,x,x,,,,,x,,x,,,,x,,x,,x,,,x,,,,adjustment,fixed position,precision
+32,velocity,x,,,,,,x,,,x,,,x,,x,,,,x,x,,,x,,,,,x,,speed,speedometer,position
+33,yaw,x,,,,,,x,,,x,,,x,,x,,,,x,,,,x,,,,,x,,rotation,z axis,lateral angle
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,<code>,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA,BB,,,,
+,<count>,33,0,0,0,0,11,22,7,10,16,5,6,22,6,17,10,7,4,22,14,10,8,11,7,15,6,14,13,,,,

@@ -1,0 +1,7 @@
+Jacob Blazina CSCD350 Task4 Pre-Task Questions
+
+1. Should StateStart and StateEnd be saved as fields in the individual components?
+2. If a step over-shoots the StateEnd, do we abruptly cancel or allow the overstep?
+3. Are all states going to be doubles or should we implement a state interface as well?
+4. For getStep_(), does that just return the value that we initialized in the constructor, or does it return the number of steps since StateStart?
+5. In the terminate_() method, what does reverse the step mean? Go back to the previous state?
