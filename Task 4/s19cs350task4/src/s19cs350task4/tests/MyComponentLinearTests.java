@@ -17,5 +17,35 @@ class MyComponentLinearTests {
 		assertEquals(10, test.getStateEnd_());
 		assertEquals(1, test.getStep_());
 	}
+	
+	@Test
+	void constructor_id_invalid_string_failure() {
+		assertThrows(RuntimeException.class,
+				() -> {
+					new MyComponentLinear("", 0, 10, 1);
+				});
+	}
+	
+	@Test
+	void updateState_increments_one_step_positive_success() {
+		MyComponentLinear test = new MyComponentLinear("Tester", 0.0, 10.0, 1);
+		
+		assertEquals(0, test.getState_());
+		
+		test.updateState_();
+		
+		assertEquals(1, test.getState_());
+	}
+	
+	@Test
+	void updateState_increments_one_step_negative_success() {
+		MyComponentLinear test = new MyComponentLinear("Tester", 10.0, 0.0, 1);
+		
+		assertEquals(10.0, test.getState_());
+		
+		test.updateState_();
+		
+		assertEquals(9.0, test.getState_());
+	}
 
 }

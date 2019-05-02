@@ -14,6 +14,10 @@ public class MyComponentLinear implements I_Component {
 	
 	public MyComponentLinear(String id, double stateStart, double stateEnd, double step){
 		// check is id is null or empty
+		if (id.equals(null) || id.isEmpty()) {
+			throw new RuntimeException("Error: id must be a valid non-empty string");
+		}
+		
 		this.id = id;
 		this.stateCurrent = stateStart;
 		this.stateStart = stateStart;
