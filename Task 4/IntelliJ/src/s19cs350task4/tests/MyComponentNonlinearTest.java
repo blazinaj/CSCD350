@@ -1,6 +1,7 @@
-package s19cs350task4;
+package s19cs350task4.tests;
 
 import org.junit.jupiter.api.Test;
+import s19cs350task4.MyComponentNonlinear;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -113,29 +114,26 @@ class MyComponentNonlinearTest {
 
         test.updateState_();
 
-        assertEquals(2, test.getState_());
+        assertEquals(2.25, test.getState_());
 
         test.cancel_();
 
         test.updateState_();
         test.updateState_();
 
-        assertEquals(2, test.getState_());
+        assertEquals(2.25, test.getState_());
         assertEquals(false, test.updateState_());
     }
 
     @Test
     void cancel_stops_servicing_updateState_at_stateEnd_success(){
-        MyComponentNonlinear test = new MyComponentNonlinear("Tester", 10.0, 0.0, 1, 0.25);
+        MyComponentNonlinear test = new MyComponentNonlinear("Tester", 2.25, 0.0, 1, 0.25);
 
-        for (int i = 10; i > 1; i--){
-            assertEquals(i, test.getState_());
-            assertFalse(test.updateState_());
-            assertEquals(i - 1, test.getState_());
-        }
+        test.updateState_();
+        assertEquals(1.25, test.getState_());
 
         assertTrue(test.updateState_());
-        assertTrue(test.updateState_());
+        assertEquals(0.0, test.getState_());
 
         assertEquals(0.0, test.getState_());
 
@@ -168,13 +166,13 @@ class MyComponentNonlinearTest {
         assertEquals(1, test.getState_());
 
         test.updateState_();
-        assertEquals(2, test.getState_());
+        assertEquals(2.25, test.getState_());
 
         test.updateState_();
-        assertEquals(3, test.getState_());
+        assertEquals(3.75, test.getState_());
 
         test.updateState_();
-        assertEquals(4, test.getState_());
+        assertEquals(5.50, test.getState_());
 
         // Call terminate
         test.terminate_();
@@ -183,30 +181,30 @@ class MyComponentNonlinearTest {
 
         // Reverse 1
         test.updateState_();
-        assertEquals(3, test.getState_());
+        assertEquals(3.5, test.getState_());
         assertTrue(test.isDying_());
         assertFalse(test.isDead_());
 
         // Reverse 2
         test.updateState_();
-        assertEquals(2, test.getState_());
+        assertEquals(2.5, test.getState_());
         assertTrue(test.isDying_());
         assertFalse(test.isDead_());
 
         // Reverse 3, now is dead
         test.updateState_();
-        assertEquals(1, test.getState_());
+        assertEquals(2.0, test.getState_());
         assertTrue(test.isDying_());
         assertTrue(test.isDead_());
 
         // Counter is up, now component is Dead
         test.updateState_();
-        assertEquals(1, test.getState_());
+        assertEquals(2.0, test.getState_());
         assertTrue(test.isDying_());
         assertTrue(test.isDead_());
 
         test.updateState_();
-        assertEquals(1, test.getState_());
+        assertEquals(2.0, test.getState_());
         assertTrue(test.isDying_());
         assertTrue(test.isDead_());
     }
@@ -220,13 +218,13 @@ class MyComponentNonlinearTest {
         assertEquals(9, test.getState_());
 
         test.updateState_();
-        assertEquals(8, test.getState_());
+        assertEquals(7.75, test.getState_());
 
         test.updateState_();
-        assertEquals(7, test.getState_());
+        assertEquals(6.25, test.getState_());
 
         test.updateState_();
-        assertEquals(6, test.getState_());
+        assertEquals(4.5, test.getState_());
 
         // Call terminate
         test.terminate_();
@@ -235,30 +233,30 @@ class MyComponentNonlinearTest {
 
         // Reverse 1
         test.updateState_();
-        assertEquals(7, test.getState_());
+        assertEquals(6.5, test.getState_());
         assertTrue(test.isDying_());
         assertFalse(test.isDead_());
 
         // Reverse 2
         test.updateState_();
-        assertEquals(8, test.getState_());
+        assertEquals(7.5, test.getState_());
         assertTrue(test.isDying_());
         assertFalse(test.isDead_());
 
         // Reverse 3, then sets to dead
         test.updateState_();
-        assertEquals(9, test.getState_());
+        assertEquals(8, test.getState_());
         assertTrue(test.isDying_());
         assertTrue(test.isDead_());
 
         // Counter is up, now component is Dead
         test.updateState_();
-        assertEquals(9, test.getState_());
+        assertEquals(8, test.getState_());
         assertTrue(test.isDying_());
         assertTrue(test.isDead_());
 
         test.updateState_();
-        assertEquals(9, test.getState_());
+        assertEquals(8, test.getState_());
         assertTrue(test.isDying_());
         assertTrue(test.isDead_());
     }
